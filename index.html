@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>
+      Photographer Portfolio Website Design By Soft Simurgh Using HTML, CSS,
+      Bootstrap, Jquery, JS
+    </title>
+    <!-- fontawesome cdn -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <!-- bootstrap cdn -->
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+    <style>
+      .prim-navbar > nav > a {
+        transition: 0.3s ease-in-out;
+        border-left: 1px solid #fff;
+      }
+      .prim-navbar > nav > a.active,
+      .prim-navbar > nav > a:hover {
+        background: #52c5f7 !important;
+        color: #fff !important;
+      }
+      .hero-msg-icon::after {
+        position: absolute;
+        content: "";
+        top: 100%;
+        left: 7px;
+        width: 18px;
+        height: 15px;
+        background: white;
+        clip-path: polygon(0% 0%, 100% 0%, 50% 100%);
+      }
+      .hero-btn {
+        transition: 0.3s ease-in-out;
+        border: 2px solid transparent;
+      }
+      .hero-btn:hover {
+        background: transparent !important;
+        color: #222 !important;
+        border: 2px solid #222;
+      }
+      .hero-social > a {
+        transition: 0.3s ease-in-out;
+      }
+      .hero-social > a:hover {
+        color: #ffc107 !important;
+        transform: translateY(-5px);
+      }
+      @media(max-width: 768px){
+        .hero-heading{
+            font-size: 3rem !important;
+        }
+        .hero-img{
+            min-height: 0 !important;
+        }
+      }
+      @media(max-width: 425px){
+        .hero-heading{
+            font-size: 2rem !important;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- header section start -->
+    <header
+      class="m-0 p-0 position-fixed w-100 top-5 left-0"
+      style="z-index: 999"
+    >
+      <!-- primary header start -->
+      <div
+        class="container-xxl d-flex justify-content-between align-items-strech bg-white px-5 shadow-sm prim-navbar"
+      >
+        <!-- nav list right start -->
+        <nav
+          class="d-flex align-items-strech position-relative height-100 scroll-watch-list"
+        >
+          <a
+            href="#hero"
+            class="text-uppercase px-3 d-flex align-items-center text-dark text-decoration-none fw-normal bg-white"
+            >home</a
+          >
+          <a
+            href="#service"
+            class="text-uppercase px-3 d-flex align-items-center text-dark text-decoration-none fw-normal bg-white"
+            >services</a
+          >
+          <a
+            href="#pricing"
+            class="text-uppercase px-3 d-flex align-items-center text-dark text-decoration-none fw-normal bg-white"
+            >pricing</a
+          >
+        </nav>
+        <!-- nav list right end -->
+
+        <!-- logo start -->
+        <a href="./" class="py-2">
+          <img
+            style="max-width: 160px"
+            src="./assets/images/logo.png"
+            alt="Logo"
+          />
+        </a>
+        <!-- logo end -->
+
+        <!-- nav list left start -->
+        <nav
+          class="d-flex align-items-strech position-relative height-100 scroll-watch-list"
+        >
+          <a
+            href="#portfolio"
+            class="text-uppercase px-3 d-flex align-items-center text-dark text-decoration-none fw-normal bg-white"
+            >portfolio</a
+          >
+          <a
+            href="#blog"
+            class="text-uppercase px-3 d-flex align-items-center text-dark text-decoration-none fw-normal bg-white"
+            >blog</a
+          >
+          <a
+            href="#about"
+            class="text-uppercase px-3 d-flex align-items-center text-dark text-decoration-none fw-normal bg-white"
+            >about me</a
+          >
+        </nav>
+        <!-- nav list left end -->
+      </div>
+      <!-- primary header end -->
+    </header>
+    <!-- header section end -->
+
+    <!-- hero section start -->
+    <section id="hero" class="scroll-watch-sec" style="padding-top: 70px">
+      <!-- container start -->
+      <div class="container-xxl">
+        <div class="row">
+          <!-- hero left-side start -->
+          <div
+            class="bg-primary py-5 px-3 col-xxl-6 col-12 col-md-6 col-sm-12 d-flex flex-column justify-content-center align-items-center"
+          >
+            <h1
+              class="hero-heading text-dark mb-4 border border-3 border-dark p-4 text-uppercase d-flex flex-column"
+              style="font-size: 4rem"
+            >
+              <span>perfect</span> <span>click</span>
+            </h1>
+
+            <div>
+              <article
+                class="mb-2 bg-white py-2 px-4 mt-4 position-relative hero-msg-icon"
+              >
+                <p class="text-dark fs-5">
+                  Hi...This is <span class="text-primary fs-4">Finesse</span>.
+                </p>
+                <p class="text-dark fs-5 text-capitalize">
+                  a professional photographer
+                </p>
+              </article>
+              <br />
+
+              <a
+                href="#"
+                class="text-warning bg-dark text-decoration-none py-2 px-4 fs-6 text-uppercase fw-normal hero-btn"
+              >
+                contact me
+              </a>
+
+              <div class="d-flex gap-5 align-items-center mt-5 hero-social">
+                <a href="#" class="text-dark fs-4">
+                  <i class="fab fa-facebook"></i>
+                </a>
+                <a href="#" class="text-dark fs-4">
+                  <i class="fab fa-twitter-square"></i>
+                </a>
+                <a href="#" class="text-dark fs-4">
+                  <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="text-dark fs-4">
+                  <i class="fab fa-whatsapp"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- hero left-side end -->
+
+          <!-- hero right side start -->
+          <div class="col-xxl-6 col-12 col-md-6 col-sm-12">
+            <img class="w-100 hero-img" src="./assets/images/hero-img.jpg" alt="Hero Img" style="min-height: 700px; width: calc(100% + 24px) !important; margin-left: -12px;;">
+          </div>
+          <!-- hero right side end -->
+        </div>
+      </div>
+      <!-- container end -->
+    </section>
+    <!-- hero section end -->
+
+    <!-- bootstrap cdn -->
+    <script src="./assets/js/bootstrap.bundle.min.js"></script>
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
+    <!-- scroll-watch js -->
+    <script src="./assets/js/scrollwatch.js"></script>
+    <!-- custom js -->
+    <script src="./assets/js/app.js"></script>
+  </body>
+</html>
